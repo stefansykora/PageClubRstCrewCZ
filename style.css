@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/**** reusable (znovupoužitelný věci) ****/
+
+.row {   /* znovupoužitelná třída (class)*/
+    width: 1140px;
+    margin: 0 auto;
+
+}
+
+/****  header *****/
+header {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.6)), url("image/IMG_7455.jpg") ;
+    background-size: cover;
+    height: 100vh;
+    
+}
+
+#logo img { /* idcko loga*/
+    width: 180px; /* velikost*/
+    position: absolute; /* vyjmutí z "toku" */
+    top: 10%; /* odsazení od shora*/
+    left: 18%;
+    transform: translate(-50%-50%);
+    
+    
+}
+
+nav ul li { /* navigace položky */
+    display: inline-block;
+    color: #fff;
+    margin-left: 30px; 
+}
+
+
+nav ul li a:link, /* navigace odkazy + co se stane v klidu*/
+nav ul li a:visited { 
+    color: #fff;
+    font-size: 30px;
+    text-decoration: none; /*odstranění podtržení*/
+    border-bottom: 2px solid transparent;
+}
+
+nav ul li a:hover, /* navigace odkazy + co se stane po najetí kur.*/
+nav ul li a:active {
+    transition: 1s;
+    border-bottom: 3px solid #f37a1c;
+    
+}
+    
+
+nav ul { /* navigace celá "tabulka" */
+    float: right;
+    margin-top: 150px;
+    
+}
+
+.headerText {
+    position: absolute;
+    top: 50%; /*odsazení od shora*/
+    left: 20%; /* odstazení z leva*/
+    transform: translate(-50%-50%); /*zarovnaní*/
+    text-decoration: none; /* odstranění podtržení*/
+    
+}
+
+.headerText h1 {
+    color: #fff;
+    font-size: 35px;
+    text-transform: uppercase; /*změní na velká písmena*/
+    letter-spacing: 2,7px; /*mezera mezi mísmeny*/
+    word-spacing: 3px; /* mezera mezi písmeny */
+}
+
+.btn {
+    display: inline-block; 
+    color: #fff;
+    text-decoration: none; /* odstraní podtržení */
+    font-size: 20px;
+    border: 1px solid #f37a1c; /* orámování */
+    border-radius: 10px; /* zakřivení rámování */
+    margin-top: 10px; /* odstup */
+    padding: 5px 10px; /* odstup */
+    letter-spacing: 1px; /* mezera mezi písmeny */
+}
+
+.prvniTlacitko:link,   /* jak se bude chovat normálně */
+.prvniTlacitko:visited {
+    background: #f37a1c;
+}
+.prvniTlacitko:hover,  /* jak se bude chovat po najetí kurzoru */
+.prvniTlacitko:active {
+    transition: 0.7s;
+    background: #9f4704;
+    
+}
+
+.druheTlacitko:link, /* jak se bude chovat normálně */
+.druheTlacitko:visited {
+    margin-left: 5px;
+}
+
+.druheTlacitko:hover, /* jak se bude chovat po najetí kurzoru a kliknutí */
+.druheTlacitko:active {
+    transition: 0.7s;
+    background: #f37a1c;
+    border: 1px solid #f37a1c; /* prolne se oramování při najetí kurzoru*/
+}
+
